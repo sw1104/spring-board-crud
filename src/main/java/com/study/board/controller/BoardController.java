@@ -23,7 +23,7 @@ public class BoardController {
     @PostMapping("/board/write")
     public String boardWrite(Board board) {
         boardService.write(board);
-        return "";
+        return "redirect:/board/list";
     }
 
     @GetMapping("/board/list")
@@ -31,4 +31,17 @@ public class BoardController {
         model.addAttribute("list", boardService.boardList());
         return "boardlist";
     }
+
+    @GetMapping("/board/view")
+    public String boardView(Model model, Integer id) {
+        model.addAttribute("board", boardService.boardView(id));
+        return "boardview";
+    }
+
+    @GetMapping("/board/delete")
+    public String boardDelete(Integer id) {
+        boardService.boardDelete(id);
+        return "redirect:/board/list";
+    }
+
 }
