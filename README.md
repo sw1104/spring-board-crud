@@ -11,7 +11,7 @@ Java를 공부하며 간단한 프로젝트를 만들어보기 위해 게시판 
 - 게시글 필터
 
 #### 스택
-  Java8, Spring2, MySQL
+  Java8, Spring Boot2.x, MySQL, Gradle
 
 https://user-images.githubusercontent.com/105622759/219582344-ca6090b9-f44b-44d6-8de1-6a5941149179.mov
 
